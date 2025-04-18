@@ -13,7 +13,7 @@ class LLMInterface:
     def __init__(self, config):
         self.config = config
         self.logger = logging.getLogger(__name__)
-        self.api_key = config.get('api_key', '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')
+        self.api_key = config.get('api_key', 'gsk_')
         self.model = config.get('model', 'deepseek-r1-distill-llama-32b')
         self.max_tokens = config.get('max_tokens', 4000)
         self.temperature = config.get('temperature', 0.25)
