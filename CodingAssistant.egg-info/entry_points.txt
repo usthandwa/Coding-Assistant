@@ -1,0 +1,2 @@
+[console_scripts]
+ai-coding-agent = CodingAssistant.main:main

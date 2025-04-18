@@ -1,0 +1,16 @@
+{
+  "session_id": "256cc0ae-5d8e-4f88-9cea-958e7ffe21ac",
+  "created_at": "2025-04-07T08:26:55.644982",
+  "interactions": [
+    {
+      "timestamp": "2025-04-07T08:27:01.338930",
+      "query": "Explain",
+      "response": "There was an error communicating with the language model API: 404 Client Error: Not Found for url: https:\\\\2. groq.com/openai/v1/chat/completions",
+      "metadata": {}
+    }
+  ],
+  "state": {},
+  "active_files": [],
+  "insights": [],
+  "updated_at": "2025-04-07T08:27:01.338930"
+}

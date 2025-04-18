@@ -1,0 +1,58 @@
+# config/default_config.yaml
+repository_integration:
+  storage_dir: repositories
+  max_repo_size_mb: 100
+  index_file_extensions:
+    - .py
+    - .js
+    - .jsx
+    - .ts
+    - .tsx
+    - .java
+    - .c
+    - .cpp
+    - .h
+    - .hpp
+    - .cs
+    - .go
+    - .rs
+  ignore_patterns:
+    - node_modules
+    - venv
+    - .git
+    - __pycache__
+    - "*.min.js"
+
+code_analysis:
+  enable_syntax_parsing: true
+  enable_semantic_analysis: true
+  max_files_to_analyze: 1000
+  line_length_limit: 120
+
+context_management:
+  storage_dir: sessions
+  max_context_items: 50
+  relevance_threshold: 0.5
+
+reasoning:
+  model: deepseek-r1-distill-llama-70b
+  max_tokens: 4000
+  temperature: 0.7
+  top_p: 0.9
+  enable_heuristics: true
+
+interaction:
+  response_format: markdown
+  code_highlighting: true
+  max_suggestions: 5
+
+logging:
+  level: INFO
+  file: ai_coding_agent.log
+  max_file_size_mb: 10
+  backup_count: 3
+
+wp_integration:
+  enabled: false
+  api_endpoint: /wp-json/ai-coding-agent/v1
+  auth_required: true

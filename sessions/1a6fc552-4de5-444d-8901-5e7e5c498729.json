@@ -1,0 +1,16 @@
+{
+  "session_id": "1a6fc552-4de5-444d-8901-5e7e5c498729",
+  "created_at": "2025-04-07T08:25:03.386224",
+  "interactions": [
+    {
+      "timestamp": "2025-04-07T08:25:12.495891",
+      "query": "Explain",
+      "response": "I can't access the language model API without an API key. Please configure the API key in settings.",
+      "metadata": {}
+    }
+  ],
+  "state": {},
+  "active_files": [],
+  "insights": [],
+  "updated_at": "2025-04-07T08:25:12.495891"
+}

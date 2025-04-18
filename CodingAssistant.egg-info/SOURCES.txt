@@ -1,0 +1,7 @@
+setup.py
+CodingAssistant.egg-info/PKG-INFO
+CodingAssistant.egg-info/SOURCES.txt
+CodingAssistant.egg-info/dependency_links.txt
+CodingAssistant.egg-info/entry_points.txt
+CodingAssistant.egg-info/requires.txt
+CodingAssistant.egg-info/top_level.txt

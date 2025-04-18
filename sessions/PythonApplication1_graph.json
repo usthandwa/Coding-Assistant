@@ -1,0 +1,645 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "type": "repository",
+      "path": "repositories\\PythonApplication1",
+      "id": "repositories\\PythonApplication1"
+    },
+    {
+      "type": "file",
+      "path": "PythonApplication1.pyproj",
+      "extension": ".pyproj",
+      "size": 1658,
+      "id": "PythonApplication1.pyproj"
+    },
+    {
+      "type": "file",
+      "path": "PythonApplication1.sln",
+      "extension": ".sln",
+      "size": 977,
+      "id": "PythonApplication1.sln"
+    },
+    {
+      "type": "file",
+      "path": "README.md",
+      "extension": ".md",
+      "size": 161,
+      "id": "README.md"
+    },
+    {
+      "type": "file",
+      "path": ".vs\\PythonApplication1\\FileContentIndex\\4c66915b-9329-4fb2-abcd-bfa533cdfcf2.vsidx",
+      "extension": ".vsidx",
+      "size": 127,
+      "id": ".vs\\PythonApplication1\\FileContentIndex\\4c66915b-9329-4fb2-abcd-bfa533cdfcf2.vsidx"
+    },
+    {
+      "type": "directory",
+      "path": ".vs\\PythonApplication1\\FileContentIndex",
+      "id": ".vs\\PythonApplication1\\FileContentIndex"
+    },
+    {
+      "type": "directory",
+      "path": ".vs\\PythonApplication1",
+      "id": ".vs\\PythonApplication1"
+    },
+    {
+      "type": "directory",
+      "path": ".vs",
+      "id": ".vs"
+    },
+    {
+      "type": "file",
+      "path": ".vs\\PythonApplication1\\FileContentIndex\\582b64ad-3dc5-46a5-aff2-8610a4c66836.vsidx",
+      "extension": ".vsidx",
+      "size": 231,
+      "id": ".vs\\PythonApplication1\\FileContentIndex\\582b64ad-3dc5-46a5-aff2-8610a4c66836.vsidx"
+    },
+    {
+      "type": "file",
+      "path": ".vs\\PythonApplication1\\FileContentIndex\\7f96109e-ee3b-4080-88b6-5084670ad7ed.vsidx",
+      "extension": ".vsidx",
+      "size": 211,
+      "id": ".vs\\PythonApplication1\\FileContentIndex\\7f96109e-ee3b-4080-88b6-5084670ad7ed.vsidx"
+    },
+    {
+      "type": "file",
+      "path": ".vs\\PythonApplication1\\FileContentIndex\\a7829738-889c-4b5e-aa90-ad7cfb139751.vsidx",
+      "extension": ".vsidx",
+      "size": 1087,
+      "id": ".vs\\PythonApplication1\\FileContentIndex\\a7829738-889c-4b5e-aa90-ad7cfb139751.vsidx"
+    },
+    {
+      "type": "file",
+      "path": ".vs\\PythonApplication1\\FileContentIndex\\read.lock",
+      "extension": ".lock",
+      "size": 0,
+      "id": ".vs\\PythonApplication1\\FileContentIndex\\read.lock"
+    },
+    {
+      "type": "file",
+      "path": ".vs\\PythonApplication1\\v17\\.suo",
+      "extension": "",
+      "size": 38400,
+      "id": ".vs\\PythonApplication1\\v17\\.suo"
+    },
+    {
+      "type": "directory",
+      "path": ".vs\\PythonApplication1\\v17",
+      "id": ".vs\\PythonApplication1\\v17"
+    },
+    {
+      "type": "file",
+      "path": ".vs\\PythonApplication1\\v17\\TestStore\\0\\000.testlog",
+      "extension": ".testlog",
+      "size": 20,
+      "id": ".vs\\PythonApplication1\\v17\\TestStore\\0\\000.testlog"
+    },
+    {
+      "type": "directory",
+      "path": ".vs\\PythonApplication1\\v17\\TestStore\\0",
+      "id": ".vs\\PythonApplication1\\v17\\TestStore\\0"
+    },
+    {
+      "type": "directory",
+      "path": ".vs\\PythonApplication1\\v17\\TestStore",
+      "id": ".vs\\PythonApplication1\\v17\\TestStore"
+    },
+    {
+      "type": "file",
+      "path": ".vs\\PythonApplication1\\v17\\TestStore\\0\\testlog.manifest",
+      "extension": ".manifest",
+      "size": 24,
+      "id": ".vs\\PythonApplication1\\v17\\TestStore\\0\\testlog.manifest"
+    },
+    {
+      "type": "file",
+      "path": ".vscode\\settings.json",
+      "extension": ".json",
+      "size": 149,
+      "id": ".vscode\\settings.json"
+    },
+    {
+      "type": "directory",
+      "path": ".vscode",
+      "id": ".vscode"
+    },
+    {
+      "type": "file",
+      "path": "Compute launch excercise\\compute_launch.py",
+      "extension": ".py",
+      "size": 241,
+      "id": "Compute launch excercise\\compute_launch.py"
+    },
+    {
+      "type": "directory",
+      "path": "Compute launch excercise",
+      "id": "Compute launch excercise"
+    },
+    {
+      "type": "file",
+      "path": "Compute launch excercise\\compute_launch_test.py",
+      "extension": ".py",
+      "size": 396,
+      "id": "Compute launch excercise\\compute_launch_test.py"
+    },
+    {
+      "type": "file",
+      "path": "Compute launch excercise\\__pycache__\\compute_launch.cpython-39.pyc",
+      "extension": ".pyc",
+      "size": 461,
+      "id": "Compute launch excercise\\__pycache__\\compute_launch.cpython-39.pyc"
+    },
+    {
+      "type": "directory",
+      "path": "Compute launch excercise\\__pycache__",
+      "id": "Compute launch excercise\\__pycache__"
+    },
+    {
+      "type": "file",
+      "path": "Compute launch excercise\\__pycache__\\compute_launch_test.cpython-39-pytest-7.1.2.pyc",
+      "extension": ".pyc",
+      "size": 2027,
+      "id": "Compute launch excercise\\__pycache__\\compute_launch_test.cpython-39-pytest-7.1.2.pyc"
+    },
+    {
+      "type": "file",
+      "path": "Pants exercise\\exercise.ipynb",
+      "extension": ".ipynb",
+      "size": 11235,
+      "id": "Pants exercise\\exercise.ipynb"
+    },
+    {
+      "type": "directory",
+      "path": "Pants exercise",
+      "id": "Pants exercise"
+    },
+    {
+      "type": "file",
+      "path": "Shirts exercise\\shirt-exercise.ipynb",
+      "extension": ".ipynb",
+      "size": 6162,
+      "id": "Shirts exercise\\shirt-exercise.ipynb"
+    },
+    {
+      "type": "directory",
+      "path": "Shirts exercise",
+      "id": "Shirts exercise"
+    },
+    {
+      "type": "file",
+      "path": "Shirts exercise\\tests.py",
+      "extension": ".py",
+      "size": 835,
+      "id": "Shirts exercise\\tests.py"
+    },
+    {
+      "type": "file",
+      "path": "__pycache__\\compute_launch.cpython-39.pyc",
+      "extension": ".pyc",
+      "size": 436,
+      "id": "__pycache__\\compute_launch.cpython-39.pyc"
+    },
+    {
+      "type": "directory",
+      "path": "__pycache__",
+      "id": "__pycache__"
+    },
+    {
+      "type": "file",
+      "path": "__pycache__\\compute_launch_test.cpython-39-pytest-7.1.2.pyc",
+      "extension": ".pyc",
+      "size": 2002,
+      "id": "__pycache__\\compute_launch_test.cpython-39-pytest-7.1.2.pyc"
+    },
+    {
+      "type": "file",
+      "path": "__pycache__\\PythonApplication1.cpython-39-pytest-7.1.2.pyc",
+      "extension": ".pyc",
+      "size": 2001,
+      "id": "__pycache__\\PythonApplication1.cpython-39-pytest-7.1.2.pyc"
+    },
+    {
+      "type": "file",
+      "path": "__pycache__\\tests.cpython-39.pyc",
+      "extension": ".pyc",
+      "size": 914,
+      "id": "__pycache__\\tests.cpython-39.pyc"
+    },
+    {
+      "type": "class",
+      "path": "example/file.py",
+      "methods": [
+        "method1",
+        "method2"
+      ],
+      "id": "ExampleClass"
+    },
+    {
+      "id": "example/file.py"
+    },
+    {
+      "id": "method1"
+    }
+  ],
+  "links": [
+    {
+      "relationship": "contains",
+      "source": "repositories\\PythonApplication1",
+      "target": "PythonApplication1.pyproj"
+    },
+    {
+      "relationship": "contains",
+      "source": "repositories\\PythonApplication1",
+      "target": "PythonApplication1.sln"
+    },
+    {
+      "relationship": "contains",
+      "source": "repositories\\PythonApplication1",
+      "target": "README.md"
+    },
+    {
+      "relationship": "contains",
+      "source": "repositories\\PythonApplication1",
+      "target": ".vs\\PythonApplication1\\FileContentIndex\\4c66915b-9329-4fb2-abcd-bfa533cdfcf2.vsidx"
+    },
+    {
+      "relationship": "contains",
+      "source": "repositories\\PythonApplication1",
+      "target": ".vs\\PythonApplication1\\FileContentIndex"
+    },
+    {
+      "relationship": "contains",
+      "source": "repositories\\PythonApplication1",
+      "target": ".vs\\PythonApplication1"
+    },
+    {
+      "relationship": "contains",
+      "source": "repositories\\PythonApplication1",
+      "target": ".vs"
+    },
+    {
+      "relationship": "contains",
+      "source": "repositories\\PythonApplication1",
+      "target": ".vs\\PythonApplication1\\FileContentIndex\\582b64ad-3dc5-46a5-aff2-8610a4c66836.vsidx"
+    },
+    {
+      "relationship": "contains",
+      "source": "repositories\\PythonApplication1",
+      "target": ".vs\\PythonApplication1\\FileContentIndex\\7f96109e-ee3b-4080-88b6-5084670ad7ed.vsidx"
+    },
+    {
+      "relationship": "contains",
+      "source": "repositories\\PythonApplication1",
+      "target": ".vs\\PythonApplication1\\FileContentIndex\\a7829738-889c-4b5e-aa90-ad7cfb139751.vsidx"
+    },
+    {
+      "relationship": "contains",
+      "source": "repositories\\PythonApplication1",
+      "target": ".vs\\PythonApplication1\\FileContentIndex\\read.lock"
+    },
+    {
+      "relationship": "contains",
+      "source": "repositories\\PythonApplication1",
+      "target": ".vs\\PythonApplication1\\v17\\.suo"
+    },
+    {
+      "relationship": "contains",
+      "source": "repositories\\PythonApplication1",
+      "target": ".vs\\PythonApplication1\\v17"
+    },
+    {
+      "relationship": "contains",
+      "source": "repositories\\PythonApplication1",
+      "target": ".vs\\PythonApplication1\\v17\\TestStore\\0\\000.testlog"
+    },
+    {
+      "relationship": "contains",
+      "source": "repositories\\PythonApplication1",
+      "target": ".vs\\PythonApplication1\\v17\\TestStore\\0"
+    },
+    {
+      "relationship": "contains",
+      "source": "repositories\\PythonApplication1",
+      "target": ".vs\\PythonApplication1\\v17\\TestStore"
+    },
+    {
+      "relationship": "contains",
+      "source": "repositories\\PythonApplication1",
+      "target": ".vs\\PythonApplication1\\v17\\TestStore\\0\\testlog.manifest"
+    },
+    {
+      "relationship": "contains",
+      "source": "repositories\\PythonApplication1",
+      "target": ".vscode\\settings.json"
+    },
+    {
+      "relationship": "contains",
+      "source": "repositories\\PythonApplication1",
+      "target": ".vscode"
+    },
+    {
+      "relationship": "contains",
+      "source": "repositories\\PythonApplication1",
+      "target": "Compute launch excercise\\compute_launch.py"
+    },
+    {
+      "relationship": "contains",
+      "source": "repositories\\PythonApplication1",
+      "target": "Compute launch excercise"
+    },
+    {
+      "relationship": "contains",
+      "source": "repositories\\PythonApplication1",
+      "target": "Compute launch excercise\\compute_launch_test.py"
+    },
+    {
+      "relationship": "contains",
+      "source": "repositories\\PythonApplication1",
+      "target": "Compute launch excercise\\__pycache__\\compute_launch.cpython-39.pyc"
+    },
+    {
+      "relationship": "contains",
+      "source": "repositories\\PythonApplication1",
+      "target": "Compute launch excercise\\__pycache__"
+    },
+    {
+      "relationship": "contains",
+      "source": "repositories\\PythonApplication1",
+      "target": "Compute launch excercise\\__pycache__\\compute_launch_test.cpython-39-pytest-7.1.2.pyc"
+    },
+    {
+      "relationship": "contains",
+      "source": "repositories\\PythonApplication1",
+      "target": "Pants exercise\\exercise.ipynb"
+    },
+    {
+      "relationship": "contains",
+      "source": "repositories\\PythonApplication1",
+      "target": "Pants exercise"
+    },
+    {
+      "relationship": "contains",
+      "source": "repositories\\PythonApplication1",
+      "target": "Shirts exercise\\shirt-exercise.ipynb"
+    },
+    {
+      "relationship": "contains",
+      "source": "repositories\\PythonApplication1",
+      "target": "Shirts exercise"
+    },
+    {
+      "relationship": "contains",
+      "source": "repositories\\PythonApplication1",
+      "target": "Shirts exercise\\tests.py"
+    },
+    {
+      "relationship": "contains",
+      "source": "repositories\\PythonApplication1",
+      "target": "__pycache__\\compute_launch.cpython-39.pyc"
+    },
+    {
+      "relationship": "contains",
+      "source": "repositories\\PythonApplication1",
+      "target": "__pycache__"
+    },
+    {
+      "relationship": "contains",
+      "source": "repositories\\PythonApplication1",
+      "target": "__pycache__\\compute_launch_test.cpython-39-pytest-7.1.2.pyc"
+    },
+    {
+      "relationship": "contains",
+      "source": "repositories\\PythonApplication1",
+      "target": "__pycache__\\PythonApplication1.cpython-39-pytest-7.1.2.pyc"
+    },
+    {
+      "relationship": "contains",
+      "source": "repositories\\PythonApplication1",
+      "target": "__pycache__\\tests.cpython-39.pyc"
+    },
+    {
+      "relationship": "contains",
+      "source": ".vs\\PythonApplication1\\FileContentIndex",
+      "target": ".vs\\PythonApplication1\\FileContentIndex\\4c66915b-9329-4fb2-abcd-bfa533cdfcf2.vsidx"
+    },
+    {
+      "relationship": "contains",
+      "source": ".vs\\PythonApplication1\\FileContentIndex",
+      "target": ".vs\\PythonApplication1\\FileContentIndex\\582b64ad-3dc5-46a5-aff2-8610a4c66836.vsidx"
+    },
+    {
+      "relationship": "contains",
+      "source": ".vs\\PythonApplication1\\FileContentIndex",
+      "target": ".vs\\PythonApplication1\\FileContentIndex\\7f96109e-ee3b-4080-88b6-5084670ad7ed.vsidx"
+    },
+    {
+      "relationship": "contains",
+      "source": ".vs\\PythonApplication1\\FileContentIndex",
+      "target": ".vs\\PythonApplication1\\FileContentIndex\\a7829738-889c-4b5e-aa90-ad7cfb139751.vsidx"
+    },
+    {
+      "relationship": "contains",
+      "source": ".vs\\PythonApplication1\\FileContentIndex",
+      "target": ".vs\\PythonApplication1\\FileContentIndex\\read.lock"
+    },
+    {
+      "relationship": "contains",
+      "source": ".vs\\PythonApplication1",
+      "target": ".vs\\PythonApplication1\\FileContentIndex\\4c66915b-9329-4fb2-abcd-bfa533cdfcf2.vsidx"
+    },
+    {
+      "relationship": "contains",
+      "source": ".vs\\PythonApplication1",
+      "target": ".vs\\PythonApplication1\\FileContentIndex\\582b64ad-3dc5-46a5-aff2-8610a4c66836.vsidx"
+    },
+    {
+      "relationship": "contains",
+      "source": ".vs\\PythonApplication1",
+      "target": ".vs\\PythonApplication1\\FileContentIndex\\7f96109e-ee3b-4080-88b6-5084670ad7ed.vsidx"
+    },
+    {
+      "relationship": "contains",
+      "source": ".vs\\PythonApplication1",
+      "target": ".vs\\PythonApplication1\\FileContentIndex\\a7829738-889c-4b5e-aa90-ad7cfb139751.vsidx"
+    },
+    {
+      "relationship": "contains",
+      "source": ".vs\\PythonApplication1",
+      "target": ".vs\\PythonApplication1\\FileContentIndex\\read.lock"
+    },
+    {
+      "relationship": "contains",
+      "source": ".vs\\PythonApplication1",
+      "target": ".vs\\PythonApplication1\\v17\\.suo"
+    },
+    {
+      "relationship": "contains",
+      "source": ".vs\\PythonApplication1",
+      "target": ".vs\\PythonApplication1\\v17\\TestStore\\0\\000.testlog"
+    },
+    {
+      "relationship": "contains",
+      "source": ".vs\\PythonApplication1",
+      "target": ".vs\\PythonApplication1\\v17\\TestStore\\0\\testlog.manifest"
+    },
+    {
+      "relationship": "contains",
+      "source": ".vs",
+      "target": ".vs\\PythonApplication1\\FileContentIndex\\4c66915b-9329-4fb2-abcd-bfa533cdfcf2.vsidx"
+    },
+    {
+      "relationship": "contains",
+      "source": ".vs",
+      "target": ".vs\\PythonApplication1\\FileContentIndex\\582b64ad-3dc5-46a5-aff2-8610a4c66836.vsidx"
+    },
+    {
+      "relationship": "contains",
+      "source": ".vs",
+      "target": ".vs\\PythonApplication1\\FileContentIndex\\7f96109e-ee3b-4080-88b6-5084670ad7ed.vsidx"
+    },
+    {
+      "relationship": "contains",
+      "source": ".vs",
+      "target": ".vs\\PythonApplication1\\FileContentIndex\\a7829738-889c-4b5e-aa90-ad7cfb139751.vsidx"
+    },
+    {
+      "relationship": "contains",
+      "source": ".vs",
+      "target": ".vs\\PythonApplication1\\FileContentIndex\\read.lock"
+    },
+    {
+      "relationship": "contains",
+      "source": ".vs",
+      "target": ".vs\\PythonApplication1\\v17\\.suo"
+    },
+    {
+      "relationship": "contains",
+      "source": ".vs",
+      "target": ".vs\\PythonApplication1\\v17\\TestStore\\0\\000.testlog"
+    },
+    {
+      "relationship": "contains",
+      "source": ".vs",
+      "target": ".vs\\PythonApplication1\\v17\\TestStore\\0\\testlog.manifest"
+    },
+    {
+      "relationship": "contains",
+      "source": ".vs\\PythonApplication1\\v17",
+      "target": ".vs\\PythonApplication1\\v17\\.suo"
+    },
+    {
+      "relationship": "contains",
+      "source": ".vs\\PythonApplication1\\v17",
+      "target": ".vs\\PythonApplication1\\v17\\TestStore\\0\\000.testlog"
+    },
+    {
+      "relationship": "contains",
+      "source": ".vs\\PythonApplication1\\v17",
+      "target": ".vs\\PythonApplication1\\v17\\TestStore\\0\\testlog.manifest"
+    },
+    {
+      "relationship": "contains",
+      "source": ".vs\\PythonApplication1\\v17\\TestStore\\0",
+      "target": ".vs\\PythonApplication1\\v17\\TestStore\\0\\000.testlog"
+    },
+    {
+      "relationship": "contains",
+      "source": ".vs\\PythonApplication1\\v17\\TestStore\\0",
+      "target": ".vs\\PythonApplication1\\v17\\TestStore\\0\\testlog.manifest"
+    },
+    {
+      "relationship": "contains",
+      "source": ".vs\\PythonApplication1\\v17\\TestStore",
+      "target": ".vs\\PythonApplication1\\v17\\TestStore\\0\\000.testlog"
+    },
+    {
+      "relationship": "contains",
+      "source": ".vs\\PythonApplication1\\v17\\TestStore",
+      "target": ".vs\\PythonApplication1\\v17\\TestStore\\0\\testlog.manifest"
+    },
+    {
+      "relationship": "contains",
+      "source": ".vscode",
+      "target": ".vscode\\settings.json"
+    },
+    {
+      "relationship": "contains",
+      "source": "Compute launch excercise",
+      "target": "Compute launch excercise\\compute_launch.py"
+    },
+    {
+      "relationship": "contains",
+      "source": "Compute launch excercise",
+      "target": "Compute launch excercise\\compute_launch_test.py"
+    },
+    {
+      "relationship": "contains",
+      "source": "Compute launch excercise",
+      "target": "Compute launch excercise\\__pycache__\\compute_launch.cpython-39.pyc"
+    },
+    {
+      "relationship": "contains",
+      "source": "Compute launch excercise",
+      "target": "Compute launch excercise\\__pycache__\\compute_launch_test.cpython-39-pytest-7.1.2.pyc"
+    },
+    {
+      "relationship": "contains",
+      "source": "Compute launch excercise\\__pycache__",
+      "target": "Compute launch excercise\\__pycache__\\compute_launch.cpython-39.pyc"
+    },
+    {
+      "relationship": "contains",
+      "source": "Compute launch excercise\\__pycache__",
+      "target": "Compute launch excercise\\__pycache__\\compute_launch_test.cpython-39-pytest-7.1.2.pyc"
+    },
+    {
+      "relationship": "contains",
+      "source": "Pants exercise",
+      "target": "Pants exercise\\exercise.ipynb"
+    },
+    {
+      "relationship": "contains",
+      "source": "Shirts exercise",
+      "target": "Shirts exercise\\shirt-exercise.ipynb"
+    },
+    {
+      "relationship": "contains",
+      "source": "Shirts exercise",
+      "target": "Shirts exercise\\tests.py"
+    },
+    {
+      "relationship": "contains",
+      "source": "__pycache__",
+      "target": "__pycache__\\compute_launch.cpython-39.pyc"
+    },
+    {
+      "relationship": "contains",
+      "source": "__pycache__",
+      "target": "__pycache__\\compute_launch_test.cpython-39-pytest-7.1.2.pyc"
+    },
+    {
+      "relationship": "contains",
+      "source": "__pycache__",
+      "target": "__pycache__\\PythonApplication1.cpython-39-pytest-7.1.2.pyc"
+    },
+    {
+      "relationship": "contains",
+      "source": "__pycache__",
+      "target": "__pycache__\\tests.cpython-39.pyc"
+    },
+    {
+      "relationship": "defines",
+      "source": "ExampleClass",
+      "target": "method1"
+    },
+    {
+      "relationship": "contains",
+      "source": "example/file.py",
+      "target": "ExampleClass"
+    }
+  ]
+}

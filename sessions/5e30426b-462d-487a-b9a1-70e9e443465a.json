@@ -1,0 +1,16 @@
+{
+  "session_id": "5e30426b-462d-487a-b9a1-70e9e443465a",
+  "created_at": "2025-04-06T22:21:08.194612",
+  "interactions": [
+    {
+      "timestamp": "2025-04-06T22:21:10.837608",
+      "query": "Explain",
+      "response": "Error: _call_api() missing 1 required positional argument: 'query'",
+      "metadata": {}
+    }
+  ],
+  "state": {},
+  "active_files": [],
+  "insights": [],
+  "updated_at": "2025-04-06T22:21:10.837608"
+}

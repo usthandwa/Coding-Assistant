@@ -1,0 +1,16 @@
+{
+  "session_id": "966aa57a-0d5f-467b-beeb-c9e12df139b0",
+  "created_at": "2025-04-07T22:05:30.223052",
+  "interactions": [
+    {
+      "timestamp": "2025-04-07T22:05:39.104139",
+      "query": "fix imports",
+      "response": "There was an error communicating with the language model API: 503 Server Error: Service Unavailable for url: https:/\\api.groq.com\\openai\\v1\\chat\\completions",
+      "metadata": {}
+    }
+  ],
+  "state": {},
+  "active_files": [],
+  "insights": [],
+  "updated_at": "2025-04-07T22:05:39.104139"
+}

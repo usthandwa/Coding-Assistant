@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: CodingAssistant
+Version: 0.1.0
+Summary: AI agent for coding assistance
+Author: AI Coding Agent Team
+Author-email: example@example.com
+Keywords: ai,coding,assistant
+Requires-Python: >=3.8
+Requires-Dist: gitpython>=3.1.0
+Requires-Dist: pyyaml>=6.0
+Requires-Dist: networkx>=2.6.0
+Requires-Dist: requests>=2.25.0
+Requires-Dist: tree-sitter>=0.20.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: keywords
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
