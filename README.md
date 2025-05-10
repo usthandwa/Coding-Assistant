@@ -1,15 +1,17 @@
 # AI Coding Assistant
 
-A robust AI-powered coding assistant that analyzes code, explains functionality, identifies issues, suggests improvements, and helps with coding tasks across multiple programming languages.
+A robust AI-powered coding assistant that analyzes code, explains functionality, identifies issues, suggests improvements, and helps with coding tasks across multiple programming languages. Now with knowledge base functionality to capture and export development thinking processes!
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Python Version](https://img.shields.io/badge/python-3.8%2B-green)
+![Version](https://img.shields.io/badge/version-1.0.0-orange)
 
 ## 🌟 Features
 
 - **Multi-source Code Analysis**: Analyze Git repositories, local directories, individual files, or code snippets
 - **Support for 25+ Programming Languages**: Python, JavaScript, TypeScript, Java, C/C++, C#, Go, Rust, and more
-- **Cloud-backed Architecture**: Redis caching and DynamoDB persistence for improved performance and reliability
+- **Knowledge Base System**: Capture conversations, code insights, and thinking processes for future reference
+- **Export Functionality**: Export thinking processes and insights as Markdown, HTML, or JSON
 - **Advanced Context Management**: Session-based conversation history and intelligent code context tracking
 - **Multiple Interface Options**: Command-line interface, REST API, and WordPress plugin integration
 - **Robust Error Handling**: Comprehensive error handling and logging at every level
@@ -19,9 +21,10 @@ A robust AI-powered coding assistant that analyzes code, explains functionality,
 
 - [Installation](#installation)
 - [Usage](#usage)
+  - [Basic Usage](#basic-usage)
+  - [Knowledge Base Usage](#knowledge-base-usage)
+  - [Export Functionality](#export-functionality)
 - [Architecture](#architecture)
-- [API Reference](#api-reference)
-- [WordPress Integration](#wordpress-integration)
 - [Configuration](#configuration)
 - [Development Setup](#development-setup)
 - [Contributing](#contributing)
@@ -33,8 +36,7 @@ A robust AI-powered coding assistant that analyzes code, explains functionality,
 
 - Python 3.8 or higher
 - pip (Python package installer)
-- Optional: Redis server (for caching)
-- Optional: AWS account with DynamoDB access (for persistence)
+- Git (for repository analysis)
 
 ### Installation Steps
 
@@ -58,16 +60,26 @@ cp config/default_config.yaml config/my_config.yaml
 # Edit my_config.yaml with your settings
 ```
 
-4. For AWS integration (optional):
+4. Set up LLM API key:
+   - Edit your configuration file to include your API key for the chosen LLM provider
+   - Alternatively, set the API key as an environment variable:
 
 ```bash
-cp config/aws_config.example.yaml config/aws_config.yaml
-# Edit aws_config.yaml with your AWS credentials
+# For DeepSeek AI
+export DEEPSEEK_API_KEY=your_api_key
+
+# For Anthropic
+export ANTHROPIC_API_KEY=your_api_key
+
+# For OpenAI
+export OPENAI_API_KEY=your_api_key
 ```
 
 ## 🚀 Usage
 
-### Command Line Interface
+### Basic Usage
+
+#### Command Line Interface
 
 ```bash
 # Process current directory and enter interactive mode
@@ -77,51 +89,130 @@ python main.py
 python main.py --dir /path/to/directory --recursive
 
 # Process a Git repository
-python main.py --repo https://github.com/username/repository.git
-
-# Process a single file
-python main.py --file /path/to/file.py
+python main.py --dir /path/to/repository --recursive
 
 # Ask a direct question
 python main.py --dir /path/to/code --query "Explain the main function in main.py"
-
-# Continue a previous session
-python main.py --dir /path/to/code --session-id 12345-abcde
 ```
 
-### REST API
+#### Interactive Mode
 
-Start the API server:
+Start interactive mode and enter commands:
 
 ```bash
-uvicorn api_server:app --host 0.0.0.0 --port 8000
+python main.py --interactive
+
+> help
+Available commands:
+  - Type your question and press Enter to submit
+  - 'exit' or 'quit' to end the session
+  - 'search' to search the knowledge base
+  - 'export' to export conversations or thinking processes
+  - 'knowledge' to see knowledge base statistics
 ```
 
-Example API requests:
+### Knowledge Base Usage
+
+The AI Coding Assistant includes a powerful knowledge base system that captures insights, conversations, and thinking processes during development.
+
+#### Searching the Knowledge Base
 
 ```bash
-# Create a new session
-curl -X POST http://localhost:8000/sessions -H "Content-Type: application/json"
+# Search from command line
+python main.py --search "architecture design"
 
-# Process a directory
-curl -X POST http://localhost:8000/process_directory \
-  -H "Content-Type: application/json" \
-  -d '{"path": "/path/to/code", "recursive": true, "session_id": "your-session-id"}'
-
-# Submit a query
-curl -X POST http://localhost:8000/query \
-  -H "Content-Type: application/json" \
-  -d '{"query": "Explain the main function", "session_id": "your-session-id"}'
+# Or in interactive mode
+> search
+Search query: architecture design
 ```
 
-### Interactive Mode
+#### Adding a Thinking Process
 
-When running in interactive mode, you can use the following commands:
+Create a JSON file with your thinking process and add it to the knowledge base:
 
-- Type your question and press Enter to submit
-- Type `help` to see available commands
-- Type `session` to see current session information
-- Type `exit` or `quit` to end the session
+```bash
+# Add a thinking process from a file
+python main.py --add-thinking examples/thinking_process_example.json
+```
+
+The thinking process JSON structure follows this format:
+
+```json
+{
+  "title": "Feature Implementation Thinking Process",
+  "description": "Thought process for implementing feature X",
+  "tags": ["feature", "implementation", "design"],
+  "steps": [
+    {
+      "title": "Problem Analysis",
+      "content": "First, I analyzed the problem...",
+      "language": "markdown"
+    },
+    {
+      "title": "Solution Design",
+      "content": "Next, I designed the solution...",
+      "code": "function implementation() { ... }",
+      "language": "javascript"
+    }
+  ]
+}
+```
+
+### Export Functionality
+
+Export conversations and thinking processes to share with your team or include in documentation.
+
+#### Exporting from Interactive Mode
+
+```bash
+> export
+Export type (conversation, thinking, all): thinking
+Item ID: 12345-abcde
+Format (markdown, html, json): markdown
+```
+
+#### Using the Export Script
+
+For more advanced export options, use the dedicated export script:
+
+```bash
+# Export from knowledge base
+python export_thinking.py kb --type thinking --id 12345-abcde --format markdown
+
+# Export from file
+python export_thinking.py file --input examples/thinking_process_example.json --type thinking
+
+# Export all knowledge
+python export_thinking.py kb --type all --format markdown
+```
+
+#### Export Format Example (Markdown)
+
+```markdown
+# Feature Implementation Thinking Process
+
+_Exported on: 2025-05-10T12:34:56.789012_
+
+## Summary
+
+Thought process for implementing feature X
+
+**Tags:** feature, implementation, design
+
+## Thinking Process
+
+### Step 1: Problem Analysis
+
+First, I analyzed the problem...
+
+### Step 2: Solution Design
+
+Next, I designed the solution...
+
+```javascript
+function implementation() { ... }
+```
+```
 
 ## 🏗️ Architecture
 
@@ -129,128 +220,62 @@ The AI Coding Assistant is designed with a modular, multi-tier architecture:
 
 ```
 AI Coding Assistant/
-├── main.py                           # Main entry point with CLI interface
-├── api_server.py                     # FastAPI server for RESTful access
-├── code_analysis/                    # Code analysis components
-├── context_management/               # Context handling components
-├── interaction/                      # User interaction components
-├── reasoning/                        # AI reasoning components
-├── repository_integration/           # Repository handling components
-├── source_processing/                # Code source processing
-├── utils/                            # Utility functions
-└── wp_integration/                   # WordPress integration
+├── Main Application (main.py)
+├── Knowledge Base (knowledge_manager.py, export_manager.py)
+├── Code Processing Layer (code_source_scanner.py, enhanced_code_analyzer.py)
+├── Repository Integration (git_parser.py, code_indexer.py)
+├── Code Analysis (syntax_parser.py, semantic_analyzer.py)
+├── Context Management (session_context.py, code_context_graph.py)
+├── Reasoning (llm_interface.py, heuristics.py)
+├── Interaction (query_processor.py, response_generator.py)
+├── Utilities (config_utils.py)
+└── WordPress Integration (wordpress-plugin.php, api_bridge.py)
 ```
 
-### Multi-Tier Architecture
+### Component Flow
 
-1. **Frontend Layer**:
-   - Command Line Interface (main.py)
-   - WordPress Plugin (wordpress-plugin.php)
-   - RESTful API Server (api_server.py)
+1. **Input Flow**: User Query → Query Processor → Context Management → Reasoning Engine → Response Generator → User
+2. **Analysis Flow**: Code Source → Repository Integration → Code Analyzer → Syntax/Semantic Analysis → Knowledge Base
+3. **Knowledge Management Flow**: Conversation → Knowledge Extraction → Knowledge Base → Export Manager → Documentation
 
-2. **Business Logic Layer**:
-   - Code Processing (CodeSourceScanner, EnhancedCodeAnalyzer)
-   - Analysis (SyntaxParser, SemanticAnalyzer)
-   - Context Management (SessionContextStore, CodeContextGraph)
-   - AI Reasoning (LLMInterface, HeuristicsEngine)
-   - Response Handling (QueryProcessor, ResponseGenerator)
-
-3. **Caching Layer**:
-   - Redis Caching (RedisCache) for responses, analysis, and queries
-
-4. **Persistence Layer**:
-   - DynamoDB (DynamoDBManager) for session contexts, analysis, and history
-
-### Data Flow
-
-1. User requests → Frontend Layer
-2. Request processing → Business Logic Layer
-3. Check cache → Redis Caching Layer
-4. If cache miss → Process and store in cache
-5. For persistence → DynamoDB Storage Layer
-6. Response formatting → Frontend Layer → User
-
-## 📚 API Reference
-
-The REST API provides the following endpoints:
-
-### Sessions
-
-- `POST /sessions` - Create a new session
-  - Returns: `{"session_id": "uuid", "message": "Session created successfully"}`
-
-### Directory Processing
-
-- `POST /process_directory` - Process a directory or repository
-  - Request body: `{"path": "/path/to/dir", "recursive": true, "session_id": "optional-uuid"}`
-  - Returns: Details about the processed code
-
-### Queries
-
-- `POST /query` - Process a user query
-  - Request body: `{"query": "Your question here", "session_id": "uuid"}`
-  - Returns: AI assistant response
-
-## 🔌 WordPress Integration
-
-The AI Coding Assistant can be integrated with WordPress using the included plugin:
-
-1. Copy the `wordpress-plugin.php` and associated files to your WordPress plugins directory
-2. Activate the "AI Coding Agent" plugin from the WordPress admin
-3. Configure the plugin in the WordPress admin under "AI Coding Agent"
-
-The plugin provides:
-- An admin interface for code exploration and queries
-- REST API endpoints for programmatic access
-- Session management for conversation context
+For more details, see the [Technical Specification](docs/SPEC.md).
 
 ## ⚙️ Configuration
 
-Configuration is managed through YAML files in the `config/` directory:
+Configuration is managed through YAML files in the `config/` directory.
 
-### Main Configuration (default_config.yaml)
+### Key Configuration Sections
 
 ```yaml
+# Repository integration configuration
 repository_integration:
   storage_dir: repositories
   max_repo_size_mb: 100
-  # ... other repository settings
+  index_file_extensions: [.py, .js, .ts, .java, ...]
+  ignore_patterns: [node_modules, venv, .git, ...]
 
-code_analysis:
-  enable_syntax_parsing: true
-  enable_semantic_analysis: true
-  # ... other analysis settings
-
-context_management:
-  storage_dir: sessions
-  max_context_items: 50
-  # ... other context settings
-
+# Reasoning configuration
 reasoning:
   model: deepseek-r1-distill-llama-70b
   max_tokens: 4000
-  # ... other LLM settings
+  temperature: 0.7
+  top_p: 0.9
+  enable_heuristics: true
 
-# ... other configuration sections
-```
+# Knowledge base configuration
+knowledge_base:
+  storage_dir: knowledge_base
+  max_insights_per_conversation: 5
+  auto_extract_insights: true
+  tag_languages: [python, javascript, typescript, ...]
 
-### AWS Configuration (aws_config.yaml)
-
-```yaml
-dynamodb:
-  enabled: true
-  region: us-east-1
-  endpoint_url: null  # Use AWS service or local endpoint
-  context_table: ai_coding_assistant_context
-  analysis_table: ai_coding_assistant_analysis
-
-redis:
-  enabled: true
-  host: localhost
-  port: 6379
-  db: 0
-  password: null
-  timeout: 5
+# Export configuration
+export:
+  export_dir: exports
+  default_format: markdown
+  include_metadata: true
+  include_timestamps: true
+  enable_syntax_highlighting: true
 ```
 
 ## 💻 Development Setup
@@ -310,6 +335,66 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [GitPython](https://github.com/gitpython-developers/GitPython) for Git integration
 - [Tree-sitter](https://github.com/tree-sitter/py-tree-sitter) for code parsing
 - [NetworkX](https://networkx.org/) for code relationship graphs
-- [Redis](https://redis.io/) for caching
-- [AWS DynamoDB](https://aws.amazon.com/dynamodb/) for persistence
+- DeepSeek AI, Anthropic, and OpenAI for LLM APIs
 - [FastAPI](https://fastapi.tiangolo.com/) for the REST API
+
+## 📚 Examples
+
+### Example: Analyzing a Python Project
+
+```bash
+# Process the project
+python main.py --dir /path/to/python_project --recursive
+
+# Ask about the architecture
+python main.py --query "Explain the overall architecture of this project"
+
+# Get detailed explanations of specific components
+python main.py --query "How does the data processing pipeline work?"
+```
+
+### Example: Capturing a Thinking Process
+
+```bash
+# Start interactive mode
+python main.py --interactive
+
+# Discuss your thinking process
+> I'm trying to design a caching system for API responses. First, I need to determine the cache key strategy...
+
+# Export the conversation as a thinking process
+> export
+Export type (conversation, thinking, all): conversation
+Item ID: [conversation_id]
+Format (markdown, html, json): markdown
+```
+
+### Example: Creating a Custom Thinking Process
+
+Create a JSON file `my_thinking.json`:
+
+```json
+{
+  "title": "API Caching System Design",
+  "description": "Thought process for designing an efficient API caching system",
+  "tags": ["caching", "api", "performance"],
+  "steps": [
+    {
+      "title": "Cache Key Strategy",
+      "content": "For the cache key, I decided to use a combination of the API endpoint, query parameters, and user context..."
+    },
+    {
+      "title": "TTL Strategy",
+      "content": "For time-to-live (TTL) values, I implemented a tiered approach...",
+      "code": "function calculateTTL(endpoint, parameters) {\n  // Logic to determine appropriate TTL\n}",
+      "language": "javascript"
+    }
+  ]
+}
+```
+
+Add and export it:
+
+```bash
+python export_thinking.py file --input my_thinking.json --type thinking --format markdown
+```
